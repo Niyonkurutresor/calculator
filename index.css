@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --black: black;
+    --orange: orange;
+    --borderRadius: 50%;
+    --white: white;
+    --gray: gray;
+}
+.containter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30rem;
+    height: 100vh;
+    min-width: 15rem;
+    width: 100vw;
+}
+.calculator{
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 1rem;
+    width: 25rem;
+    height: 40rem;
+    margin-top:2rem ;
+    padding: 2rem;
+}
+.calculator .cal_screen{
+    background-color: var(--white);
+    color: var(--black);
+    width: 100%;
+    margin: 0 auto 4rem auto;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: bold;
+    border-radius: 1rem;
+}
+
+.calculator .buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--gray);
+    height: 73%;
+    border-radius: 1rem;
+    font-size: x-large;
+}
+
+.cal_numbers{
+    width: 80%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-color: var(--white);
+    padding: .7rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.cal_numbers{
+    display:flex;
+    flex-wrap: wrap;
+}
+.cal_numbers >div{
+    width: 25%;
+    height: 3rem;
+    background-color:var(--gray);
+    margin: .4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--borderRadius);
+}
+.cal_numbers >div:hover{
+    cursor:pointer;
+}
+.cal_operators{
+    margin:auto;
+}
+.cal_operators >div{
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    background-color: var(--black);
+    width: 3rem;
+    height: 3rem;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+.cal_operators >div:hover{
+    cursor:pointer;
+}
